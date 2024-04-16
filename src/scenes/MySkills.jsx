@@ -73,15 +73,14 @@ const MySkills = () => {
         >
           <div className="relative h-32">
             <div className="z-10">
-              <p className="font-playFair font-semibold text-5xl">01</p>
+              <p className="font-playFair font-semibold text-5xl text-brightOrange">01</p>
               <p className="font-playFair font-semibold text-3xl mt-3">
-                Experience
+               Problem Solving
               </p>
             </div>
-            <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" />
+            <div className="w-1/2 md:w-3/4 h-40  bg-darkBrown absolute rounded-t-[200px] right-0 top-0 z-[-1]" />
             <p className="mt-5">
-              this is some information about this skill that i have . it is long
-              anad boring but could provide some value.. i dont know
+            With creative problem-solving honed in branding and advertising, I excel at dissecting complex issues and crafting innovative solutions as a junior software developer
             </p>
           </div>
         </motion.div>
@@ -99,15 +98,14 @@ const MySkills = () => {
         >
           <div className="relative h-32">
             <div className="z-10">
-              <p className="font-playFair font-semibold text-5xl">02</p>
+              <p className="font-playFair font-semibold text-5xl text-brightOrange">02</p>
               <p className="font-playFair font-semibold text-3xl mt-3">
-                Innovation 
+                Communication  
               </p>
             </div>
-            <div className="w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0 z-[-1]" />
+            <div className="w-1/2 md:w-3/4 h-32 bg-brown rounded-tr-[200px]  rounded-bl-[200px] absolute right-0 top-0 z-[-1]" />
             <p className="mt-5">
-              this is some information about this skill that i have . it is long
-              anad boring but could provide some value.. i dont know
+            From my experience in teaching English as a foreign language, I communicate technical concepts with clarity and precision, fostering effective collaboration within development teams.
             </p>
           </div>
         </motion.div>
@@ -125,15 +123,14 @@ const MySkills = () => {
         >
           <div className="relative h-32">
             <div className="z-10">
-              <p className="font-playFair font-semibold text-5xl">03</p>
+              <p className="font-playFair font-semibold text-5xl text-brightOrange">03</p>
               <p className="font-playFair font-semibold text-3xl mt-3">
-                Creative 
+                Adaptability  
               </p>
             </div>
-            <div className="w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1]" />
+            <div className="w-1/2 md:w-3/4 h-32 bg-lightBrown absolute rounded-b-[200px] rotate-6 right-0 top-0 z-[-1]" />
             <p className="mt-5">
-              this is some information about this skill that i have . it is long
-              anad boring but could provide some value.. i dont know
+            Demonstrating adaptability cultivated through diverse experiences, I eagerly embrace new technologies and methodologies to continually develop my skills.
             </p>
           </div>
         </motion.div>

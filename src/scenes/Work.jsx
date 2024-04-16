@@ -16,7 +16,7 @@ const projectVariant = {
 
 const Project = ({ title, subtitle }) => {
   const overlayStyles =
-    "absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500 bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue";
+    "absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500 bg-lightBrown z-30 flex flex-col justify-center items-center text-center p-16 font-bold  text-deepGreen";
   const projectTitle = title.split(" ").join("").toLowerCase();
 
   let imageSource;
@@ -49,7 +49,7 @@ const Work = () => {
       {/* headings */}
 
       <motion.div
-        className="md:w-2/5 mx-auto text-center"
+        className="md:w-3/5 mx-auto text-center"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
@@ -68,12 +68,7 @@ const Work = () => {
           </div>
         </div>
         <p className="mt-10 mb-10">
-          Throughout my life, I've amassed a wide array of skills that can be
-          seamlessly applied to the software engineering realm. Continuously
-          seeking opportunities for growth, I'm committed to enhancing both my
-          technical expertise and interpersonal abilities. My aspiration is to
-          not only expand my own capabilities but also to impart my knowledge to
-          empower my team in the future.
+        Discovering my passion for coding and project creation has been transformative. The process of developing mobile and web applications has been incredibly rewarding, and I've seen significant growth in my skills. I'm constantly driven to enhance my work and explore new concepts, all with the goal of crafting impactful and meaningful products.
         </p>
       </motion.div>
 

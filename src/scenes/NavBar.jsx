@@ -13,7 +13,7 @@ const Link = ({ page, selectedPage, setSelectedPage }) => {
         className={`${
             selectedPage === lowerCasePage ? "text-yellow" : ""
         }
-        hover:text-yellow transition duration-500
+        inline-block relative cursor-pointer transition-all duration-500 before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-0.5 before:bg-brightOrange before:rounded-full before:opacity-0 before:transition-all before:duration-500 hover:before:w-full hover:before:opacity-100
         `}
         href={`#${lowerCasePage}`}
         onClick={() => setSelectedPage(lowerCasePage)}
@@ -40,12 +40,12 @@ const NavBar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
             setSelectedPage={setSelectedPage}
           />
                     <Link
-            page={"Skills"}
+            page={"Work"}
             selectedPage={selectedPage}
             setSelectedPage={setSelectedPage}
           />
                     <Link
-            page={"Work"}
+            page={"Skills"}
             selectedPage={selectedPage}
             setSelectedPage={setSelectedPage}
           />
@@ -87,12 +87,12 @@ const NavBar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
             setSelectedPage={setSelectedPage}
           />
                     <Link
-            page={"Skills"}
+            page={"Work"}
             selectedPage={selectedPage}
             setSelectedPage={setSelectedPage}
           />
                     <Link
-            page={"Work"}
+            page={"Skills"}
             selectedPage={selectedPage}
             setSelectedPage={setSelectedPage}
           />
