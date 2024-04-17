@@ -2,6 +2,9 @@ import LineGradient from "../components/LineGradient"
 import {useForm} from "react-hook-form"
 import {motion} from "framer-motion"
 import contact from "../assets/contact.jpg"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+
 const Contact = () =>{
     const {
         register, 
@@ -16,7 +19,7 @@ const Contact = () =>{
        }
     }
     return(
-        <section id="contact" className="py-48">
+        <section id="contact" className="py-32">
             {/* headings */}
             <motion.div
           className="flex justify-end w-full"
@@ -30,8 +33,8 @@ const Contact = () =>{
           }}
         >
             <div>
-          <p className="font-playFair font-semibold text-4xl">
-            CONTACT ME
+          <p className="font-playFair font-semibold text-4xl text-lightBrown">
+            CONTACT<span className="text-brightOrange"> ME</span>
           </p>
           <div className="flex md:justify-end my-5">
             <LineGradient width="mx-auto w-full"/>
@@ -55,7 +58,7 @@ const Contact = () =>{
               visible: { opacity: 10, y: 0 },
             }}
             >
-                <img src={contact} alt="contact me" />
+                 <FontAwesomeIcon icon={faEnvelope} className=" text-[10rem] md:text-[18rem]" />
                 
             </motion.div>
 
@@ -94,8 +97,8 @@ const Contact = () =>{
                         </p>
                     )}
 
-                    <button type="submit" className="p-5 bg-yellow font-semibold text-deep-blue mt-5 hover:bg-red hover:text-white transition duration-500">
-                        SEND ME A MESSAGE
+                    <button type="submit" className=" mt-6 bg-gradient-to-r from-brightOrange via-darkBrown to-brown text-deep-blue rounded-sm py-3 px-7 font-semibold hover:bg-blue hover:text-white transition duration-500">
+                        SEND 
                     </button>
                 </form>
 

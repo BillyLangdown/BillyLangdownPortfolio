@@ -1,8 +1,8 @@
 import LineGradient from "../components/LineGradient";
 import { motion } from "framer-motion";
-import balance from "/Users/billylangdown/Desktop/coding-projects/react-portfolio/src/assets/balance.png";
-import cultureconnect from "/Users/billylangdown/Desktop/coding-projects/react-portfolio/src/assets/cultureconnect.png";
-import ncnews from "/Users/billylangdown/Desktop/coding-projects/react-portfolio/src/assets/ncnews.png";
+import balance from "../assets/balance.png";
+import cultureconnect from "../assets/cultureconnect.png";
+import ncnews from "../assets/ncnews.png";
 
 const container = {
   hidden: {},
@@ -45,7 +45,7 @@ const Project = ({ title, subtitle }) => {
 
 const Work = () => {
   return (
-    <section id="work" className="py-48">
+    <section id="work" className="py-32">
       {/* headings */}
 
       <motion.div
@@ -60,8 +60,8 @@ const Work = () => {
         }}
       >
         <div>
-          <p className="font-playFair font-semibold text-4xl ">
-            <span className="text-red">WO</span>RK
+          <p className="font-playFair font-semibold text-4xl text-brightOrange ">
+            <span className="text-lightBrown">WO</span>RK
           </p>
           <div className="flex justify-center mt-5">
             <LineGradient width="w-1/3" />
@@ -82,21 +82,26 @@ const Work = () => {
           viewport={{ once: true, amount: 0.5 }}
           variants={container}
         >
-    
+          <a href="https://github.com/BillyLangdown/Balance" target="_blank">
           <Project
             title="Balance"
             subtitle="A food delivery app for fitness enthusiasts."
           />
+          </a>
 
+        <a href="https://github.com/JoravarSinghPunia/CultureConnect-Application" target="_blank">
           <Project
             title="CultureConnect"
             subtitle="An app for connecting communities though culture."
           />
+        </a>
 
+        <a href="https://github.com/BillyLangdown/fe-nc-news" target="_blank">
           <Project
             title="NC News"
             subtitle="A full stack web app for users to read and upload news."
           />
+        </a>
         </motion.div>
       </div>
     </section>
