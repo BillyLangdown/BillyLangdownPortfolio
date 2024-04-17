@@ -1,7 +1,7 @@
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import displayPicture from "/Users/billylangdown/Desktop/coding-projects/react-portfolio/src/assets/Billy_display_picture.jpg";
+import displayPicture from "../assets/Billy_display_picture.jpg";
 import SocialMediaIcons from '../components/SocialMediaIcons'
 
 const Landing = ({ setSelectedPage }) => {
