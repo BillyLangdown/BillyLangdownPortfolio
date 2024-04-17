@@ -1,7 +1,6 @@
 import LineGradient from "../components/LineGradient"
 import {useForm} from "react-hook-form"
 import {motion} from "framer-motion"
-import contact from "../assets/contact.jpg"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 

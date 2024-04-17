@@ -81,7 +81,7 @@ const NavBar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
       {/* mobile pop up */}
       {!isAboveSmallScreens && (
         <motion.div
-          className={`fixed right-0 bottom-0 h-full bg-darkBrown w-[250px]`}
+          className={`fixed right-0 bottom-0 h-full bg-gradient-to-b from-darkBrown to-deepGreen w-[250px]`}
           initial={{ x: "100%" }}
           animate={{ x: isMenuToggled ? 0 : "100%" }}
           transition={{ type: "tween", duration: 0.5 }}

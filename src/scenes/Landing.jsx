@@ -15,35 +15,27 @@ const Landing = ({ setSelectedPage }) => {
       <div className="md:order-2 flex justify-center basis-3/5 z-10 mt-16 md:mt-10">
         {isAboveMediumScreens ? (
           <div
-            className="relative z-0  before:absolute before:-top-32 before:-left-40
-            before:rounded-[200px] before:w-[350px] max-w-[400px] before:h-[350px] before:border-4 before:border-white  before:bg-brightOrange before:z-[-1] "
+            className="relative z-0  before:absolute before:-top-32 before:-left-36
+            before:rounded-[200px] before:w-[350px] max-w-[400px] before:h-[350px] before:bg-gradient-to-tl  before:from-deepGreen before:to-brightOrange before:z-[-1] "
           >
             <div
             className="relative z-0 before:absolute before:-bottom-32 before:-right-40
-            before:rounded-[300px] before:w-[400px] max-w-[400px] before:h-[400px] before:border-4 before:border-white  before:bg-lightBrown before:z-[-1] "
+            before:rounded-[300px] before:w-[400px] max-w-[400px] before:h-[400px] before:bg-gradient-to-tl  before:from-brown before:to-deepGreen before:z-[-1] "
           >
-                        <div
-            className="relative z-0 before:absolute before:-bottom-40 before:-left-32
-             before:w-[250px] before:rounded-br-[200px] before:rounded-tl-[200px]  max-w-[300px] before:h-[400px] before:border-4 before:border-white before:bg-brown before:z-[-1] "
-          >
-                                    <div
-            className="relative  z-0 before:absolute before:-top-48 before:-right-32
-             before:w-[300px] before:rounded-tl-[200px] before:rounded-br-[200px] max-w-[300px] before:h-[400px] before:border-4 before:border-white before:bg-darkBrown before:z-[-1] "
-          >
+
             <img
               alt="Profile picture"
-              className="z-10 w-full max-w-[400px] md:max-w-[600px] "
+              className="z-10 w-full max-w-[400px] md:max-w-[600px] rounded-lg "
               src={displayPicture}
             />
             </div>
           </div>
-          </div>
-          </div>
+
         ) : (
           <div>
             <img
               alt="Profile picture"
-              className="z-10 w-full max-w-[400px] md:max-w-[600px rounded-t-[400px]"
+              className="z-10 w-full max-w-[400px] md:max-w-[600px] rounded-sm"
               src={displayPicture}
             />
           </div>
