@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import computerSkills from "../assets/logos.png";
 
 const MySkills = () => {
-  const isAboveMediumScreens = useMediaQuery("(min-width: 1060px");
+  const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
 
   return (
     <div id="skills" className="pt-10 pb-32">
@@ -37,31 +37,31 @@ const MySkills = () => {
         </motion.div>
         <div className="mt-16 md:mt-0">
           {isAboveMediumScreens ? (
-               <div
-               className="relative z-0  before:absolute before:-top-10 before:-left-10
-              before:w-full before:h-full before:border-2 before:border-brightOrange before:z-[-1] "
-             >
             <div
-              className="relative z-0  before:absolute
-             before:w-full before:h-full  before:bg-gradient-to-br before:from-darkBrown before:via-brown before:to-deepGreen before:z-[-1] "
+              className="relative z-0  before:absolute before:-top-10 before:-left-10
+              before:w-full before:h-full before:border-2 before:border-brightOrange before:z-[-1] "
             >
-              <img
-                alt="Computer Skills"
-                className="z-10 w-full max-w-[300px] md:max-w-[500px] p-10"
-                src={computerSkills}
-              />
-            </div>
+              <div
+                className="relative z-0  before:absolute
+                before:w-full before:h-full  before:bg-gradient-to-br before:from-darkBrown before:via-brown before:to-deepGreen before:z-[-1] "
+              >
+                <img
+                  alt="Computer Skills"
+                  className="z-10 w-full max-w-[300px] md:max-w-[500px] p-10"
+                  src={computerSkills}
+                />
+              </div>
             </div>
           ) : (
             <div
               className="relative z-0  before:absolute
-             before:w-full before:h-full  before:bg-gradient-to-br before:from-darkBrown before:via-brown before:to-deepGreen before:z-[-1] "
+              before:w-full before:h-full  before:bg-gradient-to-br before:from-darkBrown before:via-brown before:to-deepGreen before:z-[-1] "
             >
-            <img
-              alt="Computer Skills"
-              className="z-10 w-full max-w-[400px] md:max-w-[600px] p-5 "
-              src={computerSkills}
-            />
+              <img
+                alt="Computer Skills"
+                className="z-10 w-full max-w-[400px] md:max-w-[600px] p-5 "
+                src={computerSkills}
+              />
             </div>
           )}
         </div>
@@ -85,12 +85,12 @@ const MySkills = () => {
             <div className="z-10">
               <p className="font-playFair font-semibold text-5xl text-brightOrange">01</p>
               <p className="font-playFair font-semibold text-3xl mt-3">
-               Problem Solving
+                Problem Solving
               </p>
             </div>
             <div className="w-1/2 md:w-3/4 md:h-40 h-20  bg-darkBrown absolute rounded-t-[200px] right-0 top-0 z-[-1]" />
             <p className="mt-5">
-            With creative problem-solving honed in branding and advertising, I excel at dissecting complex issues and crafting innovative solutions as a junior software developer
+              With creative problem-solving honed in branding and advertising, I excel at dissecting complex issues and crafting innovative solutions as a junior software developer
             </p>
           </div>
         </motion.div>
@@ -115,7 +115,7 @@ const MySkills = () => {
             </div>
             <div className="w-1/2 md:w-3/4 md:h-40 h-20  bg-brown rounded-tr-[200px]  rounded-bl-[200px] absolute right-0 top-0 z-[-1]" />
             <p className="mt-5">
-            From my experience in teaching English as a foreign language, I communicate technical concepts with clarity and precision, fostering effective collaboration within development teams.
+              From my experience in teaching English as a foreign language, I communicate technical concepts with clarity and precision, fostering effective collaboration within development teams.
             </p>
           </div>
         </motion.div>
@@ -140,7 +140,7 @@ const MySkills = () => {
             </div>
             <div className="w-1/2 md:w-3/4 md:h-40 h-20  bg-lightBrown absolute rounded-b-[200px] rotate-6 right-0 bottom-1 md:top-0 z-[-1]" />
             <p className="mt-5">
-            Demonstrating adaptability cultivated through diverse experiences, I eagerly embrace new technologies and methodologies to continually develop my skills.
+              Demonstrating adaptability cultivated through diverse experiences, I eagerly embrace new technologies and methodologies to continually develop my skills.
             </p>
           </div>
         </motion.div>

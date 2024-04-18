@@ -11,12 +11,11 @@ import Contact from "./scenes/Contact";
 function App() {
   const [isTopOfPage, setIsTopOfPage] = useState(true);
   const [selectedPage, setSelectedPage] = useState("home");
-  const isAboveMediumScreen = useMediaQuery("(min-width: 1060px");
+  const isAboveMediumScreen = useMediaQuery("(min-width: 1060px)");
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY === 0) setIsTopOfPage(true);
-      if (window.scrollY !== 0) setIsTopOfPage(false);
+      setIsTopOfPage(window.scrollY === 0);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);

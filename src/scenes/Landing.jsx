@@ -2,7 +2,7 @@ import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import displayPicture from "../assets/Billy_display_picture.jpg";
-import SocialMediaIcons from '../components/SocialMediaIcons'
+import SocialMediaIcons from '../components/SocialMediaIcons';
 
 const Landing = ({ setSelectedPage }) => {
   const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
@@ -15,26 +15,24 @@ const Landing = ({ setSelectedPage }) => {
       <div className="md:order-2 flex justify-center basis-3/5 z-10 mt-16 md:mt-10">
         {isAboveMediumScreens ? (
           <div
-            className="relative z-0  before:absolute before:-top-32 before:-left-36
+            className="relative z-0 before:absolute before:-top-32 before:-left-36
             before:rounded-[200px] before:w-[350px] max-w-[400px] before:h-[350px] before:bg-gradient-to-tl  before:from-deepGreen before:to-brightOrange before:z-[-1] "
           >
             <div
-            className="relative z-0 before:absolute before:-bottom-32 before:-right-40
-            before:rounded-[300px] before:w-[400px] max-w-[400px] before:h-[400px] before:bg-gradient-to-tl  before:from-brown before:to-deepGreen before:z-[-1] "
-          >
-
-            <img
-              alt="Profile picture"
-              className="z-10 w-full max-w-[400px] md:max-w-[600px] rounded-lg "
-              src={displayPicture}
-            />
+              className="relative z-0 before:absolute before:-bottom-32 before:-right-40
+              before:rounded-[300px] before:w-[400px] max-w-[400px] before:h-[400px] before:bg-gradient-to-tl  before:from-brown before:to-deepGreen before:z-[-1] "
+            >
+              <img
+                alt="A black and white portrait photograph of Billy Langdown"
+                className="z-10 w-full max-w-[400px] md:max-w-[600px] rounded-lg "
+                src={displayPicture}
+              />
             </div>
           </div>
-
         ) : (
           <div>
             <img
-              alt="Profile picture"
+              alt="A black and white portrait photograph of Billy Langdown"
               className="z-10 w-full max-w-[400px] md:max-w-[600px] rounded-sm"
               src={displayPicture}
             />
@@ -57,7 +55,7 @@ const Landing = ({ setSelectedPage }) => {
           }}
         >
           <p className="text-6xl font-playFair font-bold z-10 text-center md:text-start text-lightBrown">
-           Billy{" "} <br/>
+            Billy{" "} <br/>
             <span className="xs:relative xs:font-bold text-brown z-20">Langdown</span>
           </p>
           <p className=" text-text-grey mt-10 mb-7 text-sm text-center md:text-start">
@@ -73,7 +71,7 @@ const Landing = ({ setSelectedPage }) => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
-          transition={{delay:0.2, amount: 0.5 }}
+          transition={{ delay: 0.2, amount: 0.5 }}
           variants={{
             hidden: { opacity: 0, x: -50 },
             visible: { opacity: 10, x: 0 },
@@ -89,8 +87,6 @@ const Landing = ({ setSelectedPage }) => {
             Contact me
           </AnchorLink>
         </motion.div>
-        
-
 
         <motion.div
           className="flex mt-5 justify-center md:justify-start"
@@ -103,8 +99,7 @@ const Landing = ({ setSelectedPage }) => {
             visible: { opacity: 10, x: 0 },
           }}
         >
-            <SocialMediaIcons/>
-         
+          <SocialMediaIcons/>
         </motion.div>
       </div>
     </section>

@@ -30,6 +30,8 @@ const Project = ({ title, subtitle }) => {
     case "ncnews":
       imageSource = ncnews;
       break;
+    default:
+      imageSource = "Image not found";
   }
 
   return (
@@ -38,7 +40,7 @@ const Project = ({ title, subtitle }) => {
         <p className="text-2xl font-playFair">{title}</p>
         <p className="mt-5"> {subtitle} </p>
       </div>
-      <img src={imageSource} alt={projectTitle} />
+      {imageSource && <img src={imageSource} alt={projectTitle} />}
     </motion.div>
   );
 };
@@ -82,21 +84,21 @@ const Work = () => {
           viewport={{ once: true, amount: 0.5 }}
           variants={container}
         >
-          <a href="https://github.com/BillyLangdown/Balance" target="_blank">
+          <a href="https://github.com/BillyLangdown/Balance" target="_blank" rel="noreferrer">
           <Project
             title="Balance"
             subtitle="A food delivery app for fitness enthusiasts."
           />
           </a>
 
-        <a href="https://github.com/JoravarSinghPunia/CultureConnect-Application" target="_blank">
+        <a href="https://github.com/JoravarSinghPunia/CultureConnect-Application" target="_blank" rel="noreferrer">
           <Project
             title="CultureConnect"
             subtitle="An app for connecting communities though culture."
           />
         </a>
 
-        <a href="https://github.com/BillyLangdown/fe-nc-news" target="_blank">
+        <a href="https://github.com/BillyLangdown/fe-nc-news" target="_blank" rel="noreferrer">
           <Project
             title="NC News"
             subtitle="A full stack web app for users to read and upload news."

@@ -17,7 +17,7 @@ const Link = ({ page, selectedPage, setSelectedPage, closeMenu }) => {
       href={`#${lowerCasePage}`}
       onClick={() => {
         setSelectedPage(lowerCasePage);
-        closeMenu(); // Close the menu upon clicking a link
+        closeMenu(); 
       }}
     >
       {page}
@@ -31,7 +31,7 @@ const NavBar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   const navBarBackground = isTopOfPage ? "" : "bg-red";
 
   const closeMenu = () => {
-    setIsMenuToggled(false); // Set isMenuToggled to false to close the menu
+    setIsMenuToggled(false); 
   };
 
   return (
