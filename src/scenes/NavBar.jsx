@@ -58,12 +58,7 @@ const NavBar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
               setSelectedPage={setSelectedPage}
               closeMenu={closeMenu}
             />
-            <Link
-              page={"About"}
-              selectedPage={selectedPage}
-              setSelectedPage={setSelectedPage}
-              closeMenu={closeMenu}
-            />
+
             <Link
               page={"Contact"}
               selectedPage={selectedPage}
@@ -113,12 +108,7 @@ const NavBar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
               setSelectedPage={setSelectedPage}
               closeMenu={closeMenu}
             />
-            <Link
-              page={"About"}
-              selectedPage={selectedPage}
-              setSelectedPage={setSelectedPage}
-              closeMenu={closeMenu}
-            />
+    
             <Link
               page={"Contact"}
               selectedPage={selectedPage}
